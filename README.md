@@ -1,1 +1,6 @@
-# mlops-example
+# MLOps Production Ready Project
+
+- Anaconda 
+- VSCode
+- Git
+
