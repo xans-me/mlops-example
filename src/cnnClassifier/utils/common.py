@@ -49,16 +49,17 @@ def create_directories(path_to_directories: list, verbose=True):
             logger.info(f"directory created at: {path}")
 
 @ensure_annotations
-def save_json(path: Path, data: Any):
+def save_json(path: Path, data: dict):
     """save json data
-    
+
     Args:
-        path (str): path to json file
-        data (Any): data to be saved in json file
+        path (Path): path to json file
+        data (dict): data to be saved in json file
     """
     with open(path, "w") as f:
         json.dump(data, f, indent=4)
-        logger.info(f"json file saved at: {path}")
+
+    logger.info(f"json file saved at: {path}")
 
 @ensure_annotations
 def load_json(path: Path) -> ConfigBox:
