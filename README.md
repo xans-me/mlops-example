@@ -46,6 +46,13 @@ export MLFLOW_TRACKING_PASSWORD=a0567893e0257a28fe9d5074a575d7d186e541dd
 ```
 
 
+TRIAL FLOW:
+python template.py -> setup template
+
+conda create -n <env> python=3.8 
+mamba create -n <env> python=3.8 
+pip install -r requirements.txt
+
 dvc init
 dvc repro
 dvc dag
