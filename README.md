@@ -44,3 +44,8 @@ export MLFLOW_TRACKING_USERNAME=xans-me
 export MLFLOW_TRACKING_PASSWORD=a0567893e0257a28fe9d5074a575d7d186e541dd
 
 ```
+
+
+dvc init
+dvc repro
+dvc dag
